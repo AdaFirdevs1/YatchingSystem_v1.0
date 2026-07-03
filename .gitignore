@@ -1,3 +1,41 @@
+# ESP-IDF build outputs
 build/
+build_*/
 sdkconfig
 sdkconfig.old
+
+# ESP-IDF Component Manager
+managed_components/
+
+# Mevcut dosyada bilgisayara özel yerel yollar bulunuyor
+dependencies.lock
+
+# Yanlışlıkla eklenen ESP-IDF kaynak kopyası
+/components/components/
+
+# Yerel editör ayarları
+.vscode/
+.idea/
+*.code-workspace
+
+# Python ve araç önbellekleri
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Log dosyaları
+*.log
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Yerel ortam ve gizli dosyalar
+.env
+.env.*
+!.env.example
+secrets/
+private/
+*.key
+*.pem
